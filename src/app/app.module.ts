@@ -7,10 +7,11 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ArtistComponent } from './artist/artist.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, SearchComponent, NavbarComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, SearchComponent, NavbarComponent, ArtistComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
