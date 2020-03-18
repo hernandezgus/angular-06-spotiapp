@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { SpotifyService } from './spotify.service';
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true } )
     ],
   declarations: [ 
