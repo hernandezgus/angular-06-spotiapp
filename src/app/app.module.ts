@@ -13,6 +13,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { SpotifyService } from './spotify.service';
 import { NoimagePipe } from './noimage.pipe';
 import { TarjetasComponent } from './tarjetas/tarjetas.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   imports:      [ 
@@ -28,7 +29,7 @@ import { TarjetasComponent } from './tarjetas/tarjetas.component';
     NavbarComponent, 
     ArtistComponent, 
     NoimagePipe, 
-    TarjetasComponent 
+    TarjetasComponent, LoadingComponent 
     ],
   bootstrap:    [ AppComponent ],
   providers: [SpotifyService]
