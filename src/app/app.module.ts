@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ArtistComponent } from './artist/artist.component';
 import { SpotifyService } from './spotify.service';
+import { NoimagePipe } from './noimage.pipe';
 
 @NgModule({
   imports:      [ 
@@ -24,7 +25,7 @@ import { SpotifyService } from './spotify.service';
     HomeComponent, 
     SearchComponent, 
     NavbarComponent, 
-    ArtistComponent 
+    ArtistComponent, NoimagePipe 
     ],
   bootstrap:    [ AppComponent ],
   providers: [SpotifyService]
