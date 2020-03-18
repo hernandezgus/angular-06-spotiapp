@@ -26,7 +26,9 @@ import { TarjetasComponent } from './tarjetas/tarjetas.component';
     HomeComponent, 
     SearchComponent, 
     NavbarComponent, 
-    ArtistComponent, NoimagePipe, TarjetasComponent 
+    ArtistComponent, 
+    NoimagePipe, 
+    TarjetasComponent 
     ],
   bootstrap:    [ AppComponent ],
   providers: [SpotifyService]
