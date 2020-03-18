@@ -6,11 +6,11 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ArtistComponent } from './artist/artist.component';
+import { SpotifyService } from './spotify.service';
 
 @NgModule({
   imports:      [ 
@@ -20,12 +20,12 @@ import { ArtistComponent } from './artist/artist.component';
     ],
   declarations: [ 
     AppComponent, 
-    HelloComponent, 
     HomeComponent, 
     SearchComponent, 
     NavbarComponent, 
     ArtistComponent 
     ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [SpotifyService]
 })
 export class AppModule { }
