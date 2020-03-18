@@ -8,6 +8,8 @@ import { SpotifyService } from '../spotify.service';
 })
 export class HomeComponent {
 
-  constructor( private spotifyService: SpotifyService ) { }
+  constructor( private spotifyService: SpotifyService ) {
+    this.spotifyService.getNewReleases();
+   }
 
 }
