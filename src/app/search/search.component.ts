@@ -10,13 +10,19 @@ import { map } from 'rxjs/operators';
 export class SearchComponent {
 
   artistas: any[] = [];
-  constructor(private spotifyService: SpotifyService ) { }
+  loading: boolean;
+
+  constructor(private spotifyService: SpotifyService ) {
+    
+   }
 
   searchArtist(termino: string)
   {
+    this.loading = true;
     this.spotifyService.searchArtist(termino)
       .subscribe( (data: any) => {
         this.artistas = data;
+        this.loading = false;
       });
   }
 }
